@@ -58,7 +58,7 @@ section.cover .cover-main {
 }
 /* 内容居中和宽度 */
 .content{
-    width:1000px;
+    width:1500px;
     margin: 0 auto;
     padding-top: 70px !important;
 }
@@ -121,8 +121,10 @@ section.cover .cover-main {
 
 /* 侧边栏标题 */
 .sidebar > h1 a{
-    color: black
+    color: black;
+    font-family: "FZCuHeiSongS-B-GB" !important;
 }
+
 /* 侧边栏和内容分界线 */
 .sidebar {
     border-right: 1px solid rgb(247, 247, 247);
@@ -184,7 +186,7 @@ section.cover.has-mask .mask {
 .markdown-section strong {
     color: rgb(3, 20, 70);
     font-weight: bolder;
-    font-family: "Noto Serif SC","Noto Serif SC","Noto Serif SC";
+    font-family: "Noto Serif SC light","Noto Serif SC light","Noto Serif SC light";
 }
 /* a 标签 */
 .markdown-section a {
@@ -212,7 +214,7 @@ section.cover.has-mask .mask {
 .markdown-section blockquote{
     /* background: rgb(220, 220, 255); */
     background: rgb(248, 248, 252);
-    font-style: "Noto Serif SC";
+    font-style: "Noto Serif SC light";
     padding:10px;
     border-radius:10px;
 }
@@ -221,7 +223,7 @@ section.cover.has-mask .mask {
     /* background: rgb(220, 220, 255); */
     /* color:rgb(73, 2, 14) !important; */
     color:rgb(57, 72, 92) !important;
-    font-style: "Noto Serif SC";
+    font-style: "Noto Serif SC light";
 }
 /* 代码块 */
 /* .markdown-section pre {
