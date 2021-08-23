@@ -5,9 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - run: pwd
-    - run: ls -la
-    - run: bash _sidebar.sh
+    # - run: pwd
+    # - run: ls -la
+    # - run: bash _sidebar.sh
+    - run: npm i -g @cloudbase/cli
+    - run: tcb hosting deploy -e hello-cloudbase-5go3yssk369fd9e3
     - name: Checkout
       uses: actions/checkout@master
 
