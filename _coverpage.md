@@ -1,6 +1,6 @@
 <br>
 
-<canvas class="canvas" width="732" height="1297"></canvas>
+<!-- <canvas class="canvas" width="732" height="1297"></canvas> -->
 <!-- style="border-radius: 50%" -->
 <img  width="280px" src="https://i.loli.net/2021/08/22/3uLFZki9OSEVbcp.jpg
 ">
