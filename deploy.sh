@@ -1,3 +1,4 @@
+npm i -g @cloudbase/cli
 tcb login --apiKeyId AKIDUjnjR2sdTUGm6Bjcy47x1zlIchz1KKgu --apiKey AJFvMYWFm4T1KNCmfIfqoXO3YooY3C8C
 path=`cd $(dirname $0);pwd -P`
 echo the current path is:$path
