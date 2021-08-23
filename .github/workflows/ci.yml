@@ -4,8 +4,9 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - run: pwd
-    - run: ls
+    - run: ls -la
     - run: bash _sidebar.sh
     - name: Checkout
       uses: actions/checkout@master
