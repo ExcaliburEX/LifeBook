@@ -7,7 +7,8 @@
   <meta name="referrer" content="never">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <link rel="stylesheet" type="text/css" href="style/myStyle-light.css" />
   <!-- alert -->
@@ -33,8 +34,21 @@
   <a class="to-top">Top</a>
   <script>
     window.$docsify = {
+      tabs: {
+        persist: true, // default
+        sync: true, // default
+        theme: 'classic', // default
+        tabComments: true, // default
+        tabHeadings: true // default
+      },
+      count: {
+        countable: true,
+        fontsize: '0.9em',
+        color: 'rgb(90,90,90)',
+        language: 'chinese'
+      },
       name: "Excalibur's Book",
-      nameLink: 'http://localhost:3000',
+      nameLink: 'https://hello-cloudbase-5go3yssk369fd9e3-1259799643.tcloudbaseapp.com/',
       // logo: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png',
       repo: 'https://github.com/ExcaliburEX/Daily-Plan-In-Graduate-Life',
       themeColor: 'rgb(102, 126, 233)',
@@ -68,11 +82,55 @@
 
       'flexible-alerts': {
         style: 'flat'
-      }
+      },
+
+      plugins: [
+        function (hook, vm) {
+          // load livere
+          hook.beforeEach(function (content) {
+            var comment =
+              "<div id='lv-container' data-id='city' data-uid='MTAyMC81Mzg1Mi8zMDMyNQ=='></div>\n\n----\n"
+            return content + comment;
+          });
+
+
+          // add copyright
+          // hook.beforeEach(function (content) {
+          //   var copyRight = '文章作者: [TaQini](mailto:742954809@qq.com) \n\n' + '文章链接: ' + url + '\n\n' +
+          //     '版权声明: 本博客所有文章除特别声明外，均采用' +
+          //     '[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)许可协议。\n\n' +
+          //     '转载请注明来自[TaQini](http://taqini.space)！\n'
+          //   return content + copyRight;
+          // });
+
+          hook.doneEach(function () {
+            (function (d, s) {
+              var j, e = d.getElementsByTagName(s)[0];
+              if (typeof LivereTower === 'function') {
+                return;
+              }
+              j = d.createElement(s);
+              j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+              j.async = true;
+              e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+          });
+
+
+
+          // parse twemoji
+          hook.doneEach(function () {
+            twemoji.parse(document);
+          });
+        },
+      ]
     }
   </script>
   <!-- Docsify v4 -->
   <!-- <script src="//cdn.jsdelivr.net/npm/docsify@4"></script> -->
+
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js" data-ga="UA-XXXXX-Y"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script> -->
 
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
@@ -95,6 +153,9 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-yaml.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-properties.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/matlab.min.js"></script>
+  <!-- twemoji -->
+  <script src="cdn.jsdelivr.net/gh/TaQini/docsify-twemoji@master/twemoji.min.js"></script>
+
 
   <!-- CDN files for docsify-katex -->
   <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
@@ -136,6 +197,23 @@
       overflow: auto !important;
     }
   </style>
+
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: 'Github Application Client ID',
+      clientSecret: 'Github Application Client Secret',
+      repo: 'Github repo',
+      owner: 'Github repo owner',
+      admin: ['Github repo collaborators, only these guys can initialize github issues'],
+      // facebook-like distraction free mode
+      distractionFreeMode: false
+    })
+  </script> -->
+
 </body>
 
 </html>
