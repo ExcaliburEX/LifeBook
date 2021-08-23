@@ -8,8 +8,7 @@ jobs:
     # - run: pwd
     # - run: ls -la
     # - run: bash _sidebar.sh
-    - run: npm i -g @cloudbase/cli
-    - run: tcb login --apiKeyId AKIDUjnjR2sdTUGm6Bjcy47x1zlIchz1KKgu --apiKey AJFvMYWFm4T1KNCmfIfqoXO3YooY3C8C && sudo tcb hosting deploy -e hello-cloudbase-5go3yssk369fd9e3
+    - run: bash deploy.sh
     - name: Checkout
       uses: actions/checkout@master
 
