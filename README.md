@@ -34,10 +34,10 @@
 ---
 
 <div align="center">
-<font face="Noto Serif CJK SC Black">阅读链接</font>
+<font face="Noto Serif CJK SC Black">:new_moon: 阅读链接 :full_moon:</font>
 <br>
 
-⚡ :thunder: **[腾讯云静态托管 在线阅读](https://hello-cloudbase-5go3yssk369fd9e3-1259799643.tcloudbaseapp.com/)** | **[Gitee 静态托管 在线阅读](https://excaliburaias.gitee.io/lifebook/)**
+⚡ :zap: **[腾讯云静态托管 在线阅读](https://hello-cloudbase-5go3yssk369fd9e3-1259799643.tcloudbaseapp.com/)** | **[Gitee 静态托管 在线阅读](https://excaliburaias.gitee.io/lifebook/)**
 
 </div>
 
