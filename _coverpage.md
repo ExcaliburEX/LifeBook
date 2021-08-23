@@ -28,6 +28,7 @@
 
 
 [Gitee](https://gitee.com/ExcaliburAias/LifeBook)
+[GitHub](https://github.com/ExcaliburEX/LifeBook)
 [开始阅读](README.md)
 
 <!-- background image -->

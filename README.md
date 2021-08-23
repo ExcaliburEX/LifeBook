@@ -1,6 +1,9 @@
 
 <h2 align="center"><font face="Castellar">💞The Book of My Life💖</font></h2>
 
+
+
+
 <p align="center">
 <font face="Vladimir Script">Life Book</font>
 <br>
@@ -29,6 +32,14 @@
 </div>
 
 ---
+
+<div align="center">
+<font face="Noto Serif CJK SC Black">阅读链接</font>
+<br>
+
+⚡ :thunder: **[腾讯云静态托管 在线阅读](https://hello-cloudbase-5go3yssk369fd9e3-1259799643.tcloudbaseapp.com/)** | **[Gitee 静态托管 在线阅读](https://excaliburaias.gitee.io/lifebook/)**
+
+</div>
 
 # <font face="FZCuHeiSongS-B-GB">2019-2021</font></h3>
 
