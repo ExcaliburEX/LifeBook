@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Excalibur&Cathy</title>
   <meta name="referrer" content="never">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
@@ -22,19 +22,60 @@
   <!--收藏夹显示图标-->
   <link rel="shortcut icon" href="https://gitee.com/veal98/images/raw/master/img/20210212163801.png"
     type="image/x-icon">
+  <!-- <link rel="stylesheet" href="style/normalize.css"> -->
+  <link rel="stylesheet" href="style/style.css" media="screen" type="text/css" />
+  <link rel="stylesheet" href="style/love.css" type="text/css" />
 </head>
 
 
-<body background="" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
+<body onload="myfun()" background=""
+  style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
+
   <!-- <nav>
     <a href="https://throwx.cn">🐮🐮 Throwable's Blog</a>
     <a href="https://spring.throwx.cn">❤️❤️ Spring专栏</a>
   </nav> -->
-  
+
+  <script>
+    function myfun() {
+      var date1 = new Date("2020-10-06 21:00:00");
+      var date2 = new Date();
+      var Difference_In_Time = date2.getTime() - date1.getTime();
+      var Difference_In_Days = (Difference_In_Time / (1000 * 3600 * 24)).toFixed(2);
+      var currentUrl = "https://img.shields.io/badge/%E6%88%91%E4%BB%AC%E5%B7%B2%E7%BB%8F-" + Difference_In_Days
+        .toString() +
+        "天了-ff69b4?style=flat-square&logo=ello";
+      document.getElementById('111').src = currentUrl;
+      console.log(currentUrl);
+    }
+  </script>
+
+
+  <div>
+    <canvas class="canvas" style="position: absolute;top: -20%;margin: auto;border-radius: 20px;"></canvas>
+    <div class="help" style="display: none;">?</div>
+    <div class="ui" style="display: none;">
+      <input class="ui-input" type="text" />
+      <span class="ui-return">↵</span>
+    </div>
+    <div class="overlay" style="display: none;">
+      <div class="tabs" style="display: none;">
+        <div class="tabs-labels"><span class="tabs-label">Commands</span><span class="tabs-label">Info</span><span
+            class="tabs-label">Share</span></div>
+        <div class="tabs-panels">
+          <ul class="tabs-panel commands">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <div id="app">🌠🌠🌠🚀加载中...</div>
   <a class="to-top">Top</a>
   <script>
     window.$docsify = {
+
       tabs: {
         persist: true, // default
         sync: true, // default
@@ -48,9 +89,9 @@
         color: 'rgb(90,90,90)',
         language: 'chinese'
       },
-      name: "Excalibur's Book",
-      nameLink: 'https://hello-cloudbase-5go3yssk369fd9e3-1259799643.tcloudbaseapp.com/',
-      // nameLink: 'https://excaliburaias.gitee.io/lifebook/',
+      name: "Our Book",
+      // nameLink: 'https://hello-cloudbase-5go3yssk369fd9e3-1259799643.tcloudbaseapp.com/',
+      nameLink: 'https://excaliburaias.gitee.io/lifebook/',
       // nameLink: 'https://hello-cloudbase-5go3yssk369fd9e3-1259799643.tcloudbaseapp.com/',
       // logo: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png',
       repo: 'https://github.com/ExcaliburEX/Daily-Plan-In-Graduate-Life',
@@ -72,11 +113,12 @@
       }, //增加搜索框
 
       footer: {
-        copy: 'Copyright &copy; 2021 💖 </span>',
-        auth: ' <strong>柯摩</strong>',
+        copy: 'Copyright & copy 2021 💖 </span>',
+        auth: ' <strong>咚咚 & 言言</strong>',
         pre: '<hr/>',
         style: 'text-align: center;',
       },
+
       copyCode: {
         buttonText: 'Copy',
         errorText: 'Error',
@@ -92,11 +134,9 @@
           // load livere
           hook.beforeEach(function (content) {
             var comment =
-              "<div id='lv-container' data-id='city' data-uid='MTAyMC81Mzg1Mi8zMDMyNQ=='></div>\n\n----\n"
+              "\n\n----\n<div id='lv-container' data-id='city' data-uid='MTAyMC81Mzg1Mi8zMDMyNQ=='></div>\n\n"
             return content + comment;
           });
-
-
           // add copyright
           // hook.beforeEach(function (content) {
           //   var copyRight = '文章作者: [TaQini](mailto:742954809@qq.com) \n\n' + '文章链接: ' + url + '\n\n' +
@@ -118,18 +158,377 @@
               e.parentNode.insertBefore(j, e);
             })(document, 'script');
           });
-
-
-
           // parse twemoji
           hook.doneEach(function () {
             twemoji.parse(document);
           });
         },
-      ]
+      ],
+      Valine: {
+        appId: 'JuSoGac7sFQHP9Svgyxwdqc7-gzGzoHsz',
+        appKey: 'Gobi73pQRkoKr0xabUwtBMhH',
+        emojiCDN: 'https://cdn.jsdelivr.net/gh/Sanarous/files/emojis/',
+        emojiMaps: {
+          "aru (1).png": "aru/aru (1).png",
+          "aru (2).png": "aru/aru (2).png",
+          "aru (3).png": "aru/aru (3).png",
+          "aru (4).png": "aru/aru (4).png",
+          "aru (5).png": "aru/aru (5).png",
+          "aru (6).png": "aru/aru (6).png",
+          "aru (7).png": "aru/aru (7).png",
+          "aru (8).png": "aru/aru (8).png",
+          "aru (9).png": "aru/aru (9).png",
+          "aru (10).png": "aru/aru (10).png",
+          "aru (11).png": "aru/aru (11).png",
+          "aru (12).png": "aru/aru (12).png",
+          "aru (13).png": "aru/aru (13).png",
+          "aru (14).png": "aru/aru (14).png",
+          "aru (15).png": "aru/aru (15).png",
+          "aru (16).png": "aru/aru (16).png",
+          "aru (17).png": "aru/aru (17).png",
+          "aru (18).png": "aru/aru (18).png",
+          "aru (19).png": "aru/aru (19).png",
+          "aru (20).png": "aru/aru (20).png",
+          "aru (21).png": "aru/aru (21).png",
+          "aru (22).png": "aru/aru (22).png",
+          "aru (23).png": "aru/aru (23).png",
+          "aru (24).png": "aru/aru (24).png",
+          "aru (25).png": "aru/aru (25).png",
+          "aru (26).png": "aru/aru (26).png",
+          "aru (27).png": "aru/aru (27).png",
+          "aru (28).png": "aru/aru (28).png",
+          "aru (29).png": "aru/aru (29).png",
+          "aru (30).png": "aru/aru (30).png",
+          "aru (31).png": "aru/aru (31).png",
+          "aru (32).png": "aru/aru (32).png",
+          "aru (33).png": "aru/aru (33).png",
+          "aru (34).png": "aru/aru (34).png",
+          "aru (35).png": "aru/aru (35).png",
+          "aru (36).png": "aru/aru (36).png",
+          "aru (37).png": "aru/aru (37).png",
+          "aru (38).png": "aru/aru (38).png",
+          "aru (39).png": "aru/aru (39).png",
+          "aru (40).png": "aru/aru (40).png",
+          "aru (41).png": "aru/aru (41).png",
+          "aru (42).png": "aru/aru (42).png",
+          "aru (43).png": "aru/aru (43).png",
+          "aru (44).png": "aru/aru (44).png",
+          "aru (45).png": "aru/aru (45).png",
+          "aru (46).png": "aru/aru (46).png",
+          "aru (47).png": "aru/aru (47).png",
+          "aru (48).png": "aru/aru (48).png",
+          "aru (49).png": "aru/aru (49).png",
+          "aru (50).png": "aru/aru (50).png",
+          "aru (51).png": "aru/aru (51).png",
+          "aru (52).png": "aru/aru (52).png",
+          "aru (53).png": "aru/aru (53).png",
+          "aru (54).png": "aru/aru (54).png",
+          "aru (55).png": "aru/aru (55).png",
+          "aru (56).png": "aru/aru (56).png",
+          "aru (57).png": "aru/aru (57).png",
+          "aru (58).png": "aru/aru (58).png",
+          "aru (59).png": "aru/aru (59).png",
+          "aru (60).png": "aru/aru (60).png",
+          "aru (61).png": "aru/aru (61).png",
+          "aru (62).png": "aru/aru (62).png",
+          "aru (63).png": "aru/aru (63).png",
+          "aru (64).png": "aru/aru (64).png",
+          "aru (65).png": "aru/aru (65).png",
+          "aru (66).png": "aru/aru (66).png",
+          "aru (67).png": "aru/aru (67).png",
+          "aru (68).png": "aru/aru (68).png",
+          "aru (69).png": "aru/aru (69).png",
+          "aru (70).png": "aru/aru (70).png",
+          "aru (71).png": "aru/aru (71).png",
+          "aru (72).png": "aru/aru (72).png",
+          "aru (73).png": "aru/aru (73).png",
+          "aru (74).png": "aru/aru (74).png",
+          "aru (75).png": "aru/aru (75).png",
+          "aru (76).png": "aru/aru (76).png",
+          "aru (77).png": "aru/aru (77).png",
+          "aru (78).png": "aru/aru (78).png",
+          "aru (79).png": "aru/aru (79).png",
+          "aru (80).png": "aru/aru (80).png",
+          "aru (81).png": "aru/aru (81).png",
+          "aru (82).png": "aru/aru (82).png",
+          "aru (83).png": "aru/aru (83).png",
+          "aru (84).png": "aru/aru (84).png",
+          "aru (85).png": "aru/aru (85).png",
+          "aru (86).png": "aru/aru (86).png",
+          "aru (87).png": "aru/aru (87).png",
+          "aru (88).png": "aru/aru (88).png",
+          "aru (89).png": "aru/aru (89).png",
+          "aru (90).png": "aru/aru (90).png",
+          "aru (91).png": "aru/aru (91).png",
+          "aru (92).png": "aru/aru (92).png",
+          "aru (93).png": "aru/aru (93).png",
+          "aru (94).png": "aru/aru (94).png",
+          "aru (95).png": "aru/aru (95).png",
+          "aru (96).png": "aru/aru (96).png",
+          "aru (97).png": "aru/aru (97).png",
+          "aru (98).png": "aru/aru (98).png",
+          "aru (99).png": "aru/aru (99).png",
+          "aru (100).png": "aru/aru (100).png",
+          "aru (101).png": "aru/aru (101).png",
+          "aru (102).png": "aru/aru (102).png",
+          "aru (103).png": "aru/aru (103).png",
+          "aru (104).png": "aru/aru (104).png",
+          "aru (105).png": "aru/aru (105).png",
+          "aru (106).png": "aru/aru (106).png",
+          "aru (107).png": "aru/aru (107).png",
+          "aru (108).png": "aru/aru (108).png",
+          "aru (109).png": "aru/aru (109).png",
+          "aru (110).png": "aru/aru (110).png",
+          "aru (111).png": "aru/aru (111).png",
+          "aru (112).png": "aru/aru (112).png",
+          "aru (113).png": "aru/aru (113).png",
+          "aru (114).png": "aru/aru (114).png",
+          "aru (115).png": "aru/aru (115).png",
+          "aru (116).png": "aru/aru (116).png",
+          "aru (117).png": "aru/aru (117).png",
+          "aru (118).png": "aru/aru (118).png",
+          "aru (119).png": "aru/aru (119).png",
+          "aru (120).png": "aru/aru (120).png",
+          "aru (121).png": "aru/aru (121).png",
+          "aru (122).png": "aru/aru (122).png",
+          "aru (123).png": "aru/aru (123).png",
+          "aru (124).png": "aru/aru (124).png",
+          "aru (125).png": "aru/aru (125).png",
+          "aru (126).png": "aru/aru (126).png",
+          "aru (127).png": "aru/aru (127).png",
+          "aru (128).png": "aru/aru (128).png",
+          "aru (129).png": "aru/aru (129).png",
+          "aru (130).png": "aru/aru (130).png",
+          "aru (131).png": "aru/aru (131).png",
+          "aru (132).png": "aru/aru (132).png",
+          "aru (133).png": "aru/aru (133).png",
+          "aru (134).png": "aru/aru (134).png",
+          "aru (135).png": "aru/aru (135).png",
+          "aru (136).png": "aru/aru (136).png",
+          "aru (137).png": "aru/aru (137).png",
+          "aru (138).png": "aru/aru (138).png",
+          "aru (139).png": "aru/aru (139).png",
+          "aru (140).png": "aru/aru (140).png",
+          "aru (141).png": "aru/aru (141).png",
+          "aru (142).png": "aru/aru (142).png",
+          "aru (143).png": "aru/aru (143).png",
+          "aru (144).png": "aru/aru (144).png",
+          "aru (145).png": "aru/aru (145).png",
+          "aru (146).png": "aru/aru (146).png",
+          "aru (147).png": "aru/aru (147).png",
+          "aru (148).png": "aru/aru (148).png",
+          "aru (149).png": "aru/aru (149).png",
+          "aru (150).png": "aru/aru (150).png",
+          "aru (151).png": "aru/aru (151).png",
+          "aru (152).png": "aru/aru (152).png",
+          "aru (153).png": "aru/aru (153).png",
+          "aru (154).png": "aru/aru (154).png",
+          "aru (155).png": "aru/aru (155).png",
+          "aru (156).png": "aru/aru (156).png",
+          "aru (157).png": "aru/aru (157).png",
+          "aru (158).png": "aru/aru (158).png",
+          "aru (159).png": "aru/aru (159).png",
+          "aru (160).png": "aru/aru (160).png",
+          "aru (161).png": "aru/aru (161).png",
+          "aru (162).png": "aru/aru (162).png",
+          "aru (163).png": "aru/aru (163).png",
+          "aru (164).png": "aru/aru (164).png",
+          "qq-1.gif": "qq/qq-1.gif",
+          "qq-2.gif": "qq/qq-2.gif",
+          "qq-3.gif": "qq/qq-3.gif",
+          "qq-4.gif": "qq/qq-4.gif",
+          "qq-5.gif": "qq/qq-5.gif",
+          "qq-6.gif": "qq/qq-6.gif",
+          "qq-7.gif": "qq/qq-7.gif",
+          "qq-8.gif": "qq/qq-8.gif",
+          "qq-9.gif": "qq/qq-9.gif",
+          "qq-10.gif": "qq/qq-10.gif",
+          "qq-11.gif": "qq/qq-11.gif",
+          "qq-12.gif": "qq/qq-12.gif",
+          "qq-13.gif": "qq/qq-13.gif",
+          "qq-14.gif": "qq/qq-14.gif",
+          "qq-15.gif": "qq/qq-15.gif",
+          "qq-16.gif": "qq/qq-16.gif",
+          "qq-17.gif": "qq/qq-17.gif",
+          "qq-18.gif": "qq/qq-18.gif",
+          "qq-19.gif": "qq/qq-19.gif",
+          "qq-20.gif": "qq/qq-20.gif",
+          "qq-21.gif": "qq/qq-21.gif",
+          "qq-22.gif": "qq/qq-22.gif",
+          "qq-23.gif": "qq/qq-23.gif",
+          "qq-24.gif": "qq/qq-24.gif",
+          "qq-25.gif": "qq/qq-25.gif",
+          "qq-26.gif": "qq/qq-26.gif",
+          "qq-27.gif": "qq/qq-27.gif",
+          "qq-28.gif": "qq/qq-28.gif",
+          "qq-29.gif": "qq/qq-29.gif",
+          "qq-30.gif": "qq/qq-30.gif",
+          "qq-31.gif": "qq/qq-31.gif",
+          "qq-32.gif": "qq/qq-32.gif",
+          "qq-33.gif": "qq/qq-33.gif",
+          "qq-34.gif": "qq/qq-34.gif",
+          "qq-35.gif": "qq/qq-35.gif",
+          "qq-36.gif": "qq/qq-36.gif",
+          "qq-37.gif": "qq/qq-37.gif",
+          "qq-38.gif": "qq/qq-38.gif",
+          "qq-39.gif": "qq/qq-39.gif",
+          "qq-40.gif": "qq/qq-40.gif",
+          "qq-41.gif": "qq/qq-41.gif",
+          "qq-42.gif": "qq/qq-42.gif",
+          "qq-43.gif": "qq/qq-43.gif",
+          "qq-44.gif": "qq/qq-44.gif",
+          "qq-45.gif": "qq/qq-45.gif",
+          "qq-46.gif": "qq/qq-46.gif",
+          "qq-47.gif": "qq/qq-47.gif",
+          "qq-48.gif": "qq/qq-48.gif",
+          "qq-49.gif": "qq/qq-49.gif",
+          "qq-50.gif": "qq/qq-50.gif",
+          "qq-51.gif": "qq/qq-51.gif",
+          "qq-52.gif": "qq/qq-52.gif",
+          "qq-53.gif": "qq/qq-53.gif",
+          "qq-54.gif": "qq/qq-54.gif",
+          "qq-55.gif": "qq/qq-55.gif",
+          "qq-56.gif": "qq/qq-56.gif",
+          "qq-57.gif": "qq/qq-57.gif",
+          "qq-58.gif": "qq/qq-58.gif",
+          "qq-59.gif": "qq/qq-59.gif",
+          "qq-60.gif": "qq/qq-60.gif",
+          "qq-61.gif": "qq/qq-61.gif",
+          "qq-62.gif": "qq/qq-62.gif",
+          "qq-63.gif": "qq/qq-63.gif",
+          "qq-64.gif": "qq/qq-64.gif",
+          "qq-65.gif": "qq/qq-65.gif",
+          "qq-66.gif": "qq/qq-66.gif",
+          "qq-67.gif": "qq/qq-67.gif",
+          "qq-68.gif": "qq/qq-68.gif",
+          "qq-69.gif": "qq/qq-69.gif",
+          "qq-70.gif": "qq/qq-70.gif",
+          "qq-71.gif": "qq/qq-71.gif",
+          "qq-72.gif": "qq/qq-72.gif",
+          "qq-73.gif": "qq/qq-73.gif",
+          "qq-74.gif": "qq/qq-74.gif",
+          "qq-75.gif": "qq/qq-75.gif",
+          "qq-76.gif": "qq/qq-76.gif",
+          "qq-77.gif": "qq/qq-77.gif",
+          "qq-78.gif": "qq/qq-78.gif",
+          "qq-79.gif": "qq/qq-79.gif",
+          "qq-80.gif": "qq/qq-80.gif",
+          "qq-81.gif": "qq/qq-81.gif",
+          "qq-82.gif": "qq/qq-82.gif",
+          "qq-83.gif": "qq/qq-83.gif",
+          "qq-84.gif": "qq/qq-84.gif",
+          "qq-85.gif": "qq/qq-85.gif",
+          "qq-86.gif": "qq/qq-86.gif",
+          "qq-87.gif": "qq/qq-87.gif",
+          "qq-88.gif": "qq/qq-88.gif",
+          "qq-89.gif": "qq/qq-89.gif",
+          "qq-90.gif": "qq/qq-90.gif",
+          "qq-91.gif": "qq/qq-91.gif",
+          "qq-92.gif": "qq/qq-92.gif",
+          "qq-93.gif": "qq/qq-93.gif",
+          "qq-94.gif": "qq/qq-94.gif",
+          "qq-95.gif": "qq/qq-95.gif",
+          "qq-96.gif": "qq/qq-96.gif",
+          "qq-97.gif": "qq/qq-97.gif",
+          "qq-98.gif": "qq/qq-98.gif",
+          "qq-99.gif": "qq/qq-99.gif",
+          "qq-100.gif": "qq/qq-100.gif",
+          "qq-101.gif": "qq/qq-101.gif",
+          "qq-102.gif": "qq/qq-102.gif",
+          "qq-103.gif": "qq/qq-103.gif",
+          "qq-104.gif": "qq/qq-104.gif",
+          "qq-105.gif": "qq/qq-105.gif",
+          "qq-106.gif": "qq/qq-106.gif",
+          "qq-107.gif": "qq/qq-107.gif",
+          "qq-108.gif": "qq/qq-108.gif",
+          "qq-109.gif": "qq/qq-109.gif",
+          "qq-110.gif": "qq/qq-110.gif",
+          "qq-111.gif": "qq/qq-111.gif",
+          "qq-112.gif": "qq/qq-112.gif",
+          "qq-113.gif": "qq/qq-113.gif",
+          "qq-114.gif": "qq/qq-114.gif",
+          "qq-115.gif": "qq/qq-115.gif",
+          "qq-116.gif": "qq/qq-116.gif",
+          "qq-117.gif": "qq/qq-117.gif",
+          "qq-118.gif": "qq/qq-118.gif",
+          "qq-119.gif": "qq/qq-119.gif",
+          "qq-120.gif": "qq/qq-120.gif",
+          "qq-121.gif": "qq/qq-121.gif",
+          "qq-122.gif": "qq/qq-122.gif",
+          "qq-123.gif": "qq/qq-123.gif",
+          "qq-124.gif": "qq/qq-124.gif",
+          "qq-125.gif": "qq/qq-125.gif",
+          "qq-126.gif": "qq/qq-126.gif",
+          "qq-127.gif": "qq/qq-127.gif",
+          "qq-128.gif": "qq/qq-128.gif",
+          "qq-129.gif": "qq/qq-129.gif",
+          "qq-130.gif": "qq/qq-130.gif",
+          "qq-131.gif": "qq/qq-131.gif",
+          "qq-132.gif": "qq/qq-132.gif",
+          "qq-133.gif": "qq/qq-133.gif",
+          "qq-134.gif": "qq/qq-134.gif",
+          "qq-135.gif": "qq/qq-135.gif",
+          "qq-136.gif": "qq/qq-136.gif",
+          "qq-137.gif": "qq/qq-137.gif",
+          "qq-138.gif": "qq/qq-138.gif",
+          "qq-139.gif": "qq/qq-139.gif",
+          "qq-140.gif": "qq/qq-140.gif",
+          "bili-1.png": "bilibili/bili_1.png",
+          "bili-2.png": "bilibili/bili_2.png",
+          "bili-3.png": "bilibili/bili_3.png",
+          "bili-4.png": "bilibili/bili_4.png",
+          "bili-5.png": "bilibili/bili_5.png",
+          "bili-6.png": "bilibili/bili_6.png",
+          "bili-7.png": "bilibili/bili_7.png",
+          "bili-8.png": "bilibili/bili_8.png",
+          "bili-9.png": "bilibili/bili_9.png",
+          "bili-10.png": "bilibili/bili_10.png",
+          "bili-11.png": "bilibili/bili_11.png",
+          "bili-12.png": "bilibili/bili_12.png",
+          "bili-13.png": "bilibili/bili_13.png",
+          "bili-14.png": "bilibili/bili_14.png",
+          "bili-15.png": "bilibili/bili_15.png",
+          "bili-16.png": "bilibili/bili_16.png",
+          "bili-17.png": "bilibili/bili_17.png",
+          "bili-18.png": "bilibili/bili_18.png",
+          "bili-19.png": "bilibili/bili_19.png",
+          "bili-20.png": "bilibili/bili_20.png",
+          "bili-21.png": "bilibili/bili_21.png",
+          "bili-22.png": "bilibili/bili_22.png",
+          "bili-23.png": "bilibili/bili_23.png",
+          "bili-24.png": "bilibili/bili_24.png",
+          "bili-25.png": "bilibili/bili_25.png",
+          "bili-26.png": "bilibili/bili_26.png",
+          "bili-27.png": "bilibili/bili_27.png",
+          "bili-28.png": "bilibili/bili_28.png",
+          "bili-29.png": "bilibili/bili_29.png",
+          "bili-30.png": "bilibili/bili_30.png",
+          "bili-31.png": "bilibili/bili_31.png",
+          "bili-32.png": "bilibili/bili_32.png",
+          "bili-33.png": "bilibili/bili_33.png",
+          "bili-34.png": "bilibili/bili_34.png",
+          "bili-35.png": "bilibili/bili_35.png",
+          "bili-36.png": "bilibili/bili_36.png",
+          "bili-37.png": "bilibili/bili_37.png",
+          "bili-38.png": "bilibili/bili_38.png",
+          "bili-39.png": "bilibili/bili_39.png",
+          "bili-40.png": "bilibili/bili_40.png",
+          "bili-41.png": "bilibili/bili_41.png",
+          "bili-42.png": "bilibili/bili_42.png",
+          "bili-43.png": "bilibili/bili_43.png",
+          "bili-44.png": "bilibili/bili_44.png",
+          "bili-45.png": "bilibili/bili_45.png",
+          "bili-46.png": "bilibili/bili_46.png",
+          "bili-47.png": "bilibili/bili_47.png",
+          "bili-48.png": "bilibili/bili_48.png",
+          "bili-49.png": "bilibili/bili_49.png",
+          "bili-50.png": "bilibili/bili_50.png",
+        }
+        // docPath: 'full', //default to `hash` ,or you can choose `full`
+      },
     }
   </script>
-  
+
   <!-- Docsify v4 -->
   <!-- <script src="//cdn.jsdelivr.net/npm/docsify@4"></script> -->
 
@@ -203,20 +602,22 @@
   </style>
 
   <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
-  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+
+
+
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js" data-ga="UA-145155839-1"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script> -->
+  <!-- <div id="vcomments"></div>
   <script>
-    const gitalk = new Gitalk({
-      clientID: 'Github Application Client ID',
-      clientSecret: 'Github Application Client Secret',
-      repo: 'Github repo',
-      owner: 'Github repo owner',
-      admin: ['Github repo collaborators, only these guys can initialize github issues'],
-      // facebook-like distraction free mode
-      distractionFreeMode: false
-    })
+    new Valine
+      el: '#vcomments',
+      appId: 'JuSoGac7sFQHP9Svgyxwdqc7-gzGzoHsz',
+      appKey: 'Gobi73pQRkoKr0xabUwtBMhH'
+    
   </script> -->
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script src="style/docsify-valine.min.js"></script>
+  <script src="style/index.js"></script>
 
 </body>
 

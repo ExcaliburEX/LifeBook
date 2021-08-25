@@ -309,3 +309,20 @@ img, pre {
     border-radius: 8px;
 }
 
+section.cover p{
+    text-shadow: 0 2px 3px rgb(0 0 0 / 40%), 0 0 30px rgb(0 0 0 / 8%);
+}
+
+/* footer {      */
+    /* height:50px;      */
+    /* position:relative;
+    bottom: -100px;     
+    flex: 0  0 auto; */
+    /* width:100%;      */
+    /* clear:both;      */
+    /* bottom:0;      */
+    /* left:0;      */
+    /* border-bottom:1px solid #e0e0e0;      */
+    /* border-top:1px solid #e0e0e0;      */
+
+
