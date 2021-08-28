@@ -9,7 +9,7 @@
 <br>
 👋🏻📚
 <br>
-<font face="Noto Serif CJK SC Black">记录生活</font>
+<font face="Noto Serif CJK SC Black">记录生活~</font>
 </p>
 
 ---
